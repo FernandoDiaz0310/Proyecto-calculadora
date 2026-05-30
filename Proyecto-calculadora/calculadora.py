@@ -5,7 +5,7 @@ print("1) Sumar")
 print("2) Restar")
 print("3) Multiplicar")
 print("4) Dividir")
-print(" ===================================")
+print("===================================")
 op = input("\nSeleccione una opción (1/2/3/4): ").strip()
 if op not in ("1", "2", "3", "4"):
     print("Opción inválida. Fin.")

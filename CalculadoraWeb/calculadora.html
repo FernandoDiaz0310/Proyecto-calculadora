@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora Web</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <main class="calculator-app">
+        <section class="calculator-card">
+            <div class="calculator-header">
+                <h1>Calculadora Web</h1>
+                <p>Diseño y Elaboración Fernando y AI</p>
+            </div>
+
+            <div class="calculator-inputs">
+                <label>
+                    Primer número
+                    <input id="valorA" type="number" placeholder="Ingresa un valor" />
+                </label>
+                <label>
+                    Segundo número
+                    <input id="valorB" type="number" placeholder="Ingresa otro valor" />
+                </label>
+            </div>
+
+            <div class="operation-grid">
+                <button type="button" data-op="sumar">Sumar</button>
+                <button type="button" data-op="restar">Restar</button>
+                <button type="button" data-op="multiplicar">Multiplicar</button>
+                <button type="button" data-op="dividir">Dividir</button>
+                <button type="button" data-op="potencia">Potencia</button>
+                <button type="button" data-op="raiz">Raíz cuadrada</button>
+            </div>
+
+            <div class="result-card">
+                <span>Resultado</span>
+                <p id="resultado">--</p>
+            </div>
+
+            <div id="errorMessage" class="error-message" aria-live="assertive"></div>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
